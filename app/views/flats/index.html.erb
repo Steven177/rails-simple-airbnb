@@ -1,0 +1,19 @@
+<div class="container">
+  <a href="" class="btn btn-primary">Add Flat</a>
+  <h1>All of our flats</h1>
+  <p>We found <%= @flats.count %> flats</p>
+      <% @flats.each do |flat| %>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <div class="card">
+              <%= flat.name %>
+              <%= flat.address %>
+              <%= flat.description %>
+              <%= flat.price_per_night %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+
+</div>
+
